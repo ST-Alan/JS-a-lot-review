@@ -1,0 +1,21 @@
+h1{
+	font-family: apple-system, Arial, Helvetica, sans-serif;
+}
+/* ! Al poner un peso en font-weight no hay que colocar unidades de medida */
+.parrafo{
+	font-family: monospace;
+	font-size: 100;
+}
+.link-a{
+	font-size: 32px;
+	font-family: "Dank Mono";
+/* Al colocar un none a una propiedad la estamos invalidando */
+text-decoration: none;
+/*
+hexadecimal
+RGB
+HSL
+**/
+color: rgb(78, 18, 0)
+
+}
