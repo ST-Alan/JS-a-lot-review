@@ -17,5 +17,34 @@ RGB
 HSL
 **/
 color: rgb(78, 18, 0)
-
+}
+.span-1{
+	text-decoration: line-through;
+	text-transform: capitalize;
+}
+.span-2{
+	text-decoration: overline;
+	
+}
+.span-3{
+	text-decoration: underline;
+	text-transform:uppercase;
+}
+.span-4{
+	text-decoration:line-through ;
+	color: red;
+}
+/* Todos los elementos tienen la propiedad backgroud-color */
+.span-5{
+	text-decoration:overline;
+	background-color:#0ba;
+	text-decoration-color: white
+}
+.span-6{
+	color: white;
+	text-decoration:underline;
+	background-color: rgb(54, 16, 1);
+	text-decoration-color: rgba(255,183,0);
+/* Estamos indicando que el texto sea en minúscula */
+text-transform: lowercase;
 }
