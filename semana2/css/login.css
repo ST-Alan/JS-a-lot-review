@@ -1,0 +1,32 @@
+body{
+	background-color: #777;
+}
+#contenedor{
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow:3px 3px 10px #333;
+	padding-top: 40px;
+	text-align: center;
+}
+.form-control{
+	margin-top:20px;
+}
+#user, #pass{
+	height: 30px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#user:focus{
+	height: 40px;
+	border: 4px dotted blue;
+}
+#submit{
+	margin-top: 20px;
+	height: 30px;
+	width: 90px;
+	background-color: #3b5998;
+	color: white;
+}

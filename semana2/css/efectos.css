@@ -1,0 +1,28 @@
+body{
+	background-color:gray;
+}
+#contenedor{
+height: 200px;
+width: 200px;
+background-color: tomato;
+margin: auto;
+}
+.sombra{
+	box-shadow: 20px -20px 10px 3px #33aa00;
+	background:linear-gradient(to right, red 33%,white 32%,white 66%, red 33%);
+}
+.sombra:hover{
+	box-shadow: 20px -20px 10px 3px #33aa00;
+	background:linear-gradient(to top, red 33%,white 32%,white 66%, red 33%);
+}
+.sombraTexto{
+	text-shadow: 7px -3px 3px #33aa00;
+}
+#circulo{
+	width: 100px;
+	height: 100px;
+	/* background: radial-gradient(red 33%,white 33%,white 50%, red 50%, transparent); */
+	background: radial-gradient(red 33%,white 33%,white 50%, red 50%, transparent);
+	border-radius: 100px;
+
+}

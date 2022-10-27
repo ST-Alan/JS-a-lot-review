@@ -1,0 +1,12 @@
+.brdr-1{
+	border: 1px solid gray;
+}
+.brdr-2{
+	border: 1px dashed black;
+}
+.brdr-3{
+	border: 1px ridge greenyellow;
+}
+.brdr-4{
+	border: 1px groove aquamarine;
+}

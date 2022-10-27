@@ -48,3 +48,26 @@ color: rgb(78, 18, 0)
 /* Estamos indicando que el texto sea en minúscula */
 text-transform: lowercase;
 }
+.h1Jos{
+	font-family: "jost";
+}
+.bandera{
+	height: 100vh;
+	border:3px solid #222;
+}
+.verde{
+	height: 100vh;
+	background-color: green;
+	width: 30%;
+	float:left;
+}
+.rojo{
+	height: 100vh;
+	background-color: red;
+	width: 70%;	
+	float:right;
+}
+.escudo{
+	background-image: URL('../img/port.png');
+	height: 30%;
+}

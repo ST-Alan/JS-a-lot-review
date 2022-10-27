@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicios</title>
+</head>
+<body>
+	<!-- Si los inputs están dentro de un formulario no se puede mostrar la tabla, se muestra, pero se recarga automáticamente -->
+	<!-- <form id="formTabla" action="" method="get"> -->
+		<p><label for="">Inserte la cantidad de tablas que desea mostrar</label></p>
+		<p><input type="number" name="cantidadTablas" id="cantidadT"></p>
+		<p><label for="">Inserte una tabla que desee omitir</label></p>
+		<p><input type="number" name="omitirTabla"  id="omitirT"></p>
+		<p><label for="">Inserte por cuánto desea multiplicar cada tabla</label></p>
+		<p><input type="number" name="cantidadNumeros" id="cantidadT"></p>
+		<p><label for="">Inserte un número que desee omitir</label></p>
+		<p><input type="number" name="omitirNumero" id="omitirN"></p>
+		<button type="submit" onclick="crearTablas()">Crear tabla</button>
+	<!-- </form> -->
+	<div id="container"></div>
+</body>
+<script src="./app.js"></script>
+<!-- <script src="./tablaMultiplicar.js"></script> -->
+</html>
