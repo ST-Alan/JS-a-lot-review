@@ -4,6 +4,7 @@ let form = document.querySelector('#formulario')
 
 let datosTabla = []
 
+
 form.onsubmit = (e) => {
 	e.preventDefault()
 
@@ -23,22 +24,34 @@ form.onsubmit = (e) => {
 	// let iteration = datosTabla.map((iter) => {
 	// 	return console.log('iter', iter)
 	// })
-	let iteration = datosTabla.map((iter) => iter)
+	let iterationNumeroT = datosTabla.map((iter) => Number(iter.numeroT))
+	console.log('iterationNumeroT', iterationNumeroT)
+	let iterationOmitirT = datosTabla.map((iter) => Number(iter.omitirT))
+	console.log('iterationOmitirT', iterationOmitirT)
+	let iterationIngreseM = datosTabla.map((iter) => Number(iter.ingreseM))
+	console.log('iterationIngreseM', iterationIngreseM)
+	let iterationOmitirM = datosTabla.map((iter) => Number(iter.omitirM))
+	console.log('iterationOmitirM', iterationOmitirM)
 
-	// console.log('iteration', iteration)
 
-	for (i = 1; i <= iteration.numeroT; i++) {
-		if (i === Number(iteration.omitirT)) {
-			continue;
-		}
-		showApp.innerHTML += `<h2>Esta es la tabla del ${i}</h2>`
-
-		for (j = 0; j <= iteration.ingreseM; j++) {
-			if (j === Number(iteration.omitirM)) {
-				continue
+	function showTable() {
+		for (i = 1; i <= iterationNumeroT[i]; i++) {
+			if (i === iterationOmitirT[i]) {
+				continue;
 			}
-			showApp.innerHTML += `<p>${i} x ${j} = ${i * j}</p>`
+			showApp.innerHTML += `<h2>Esta es la tabla del ${i}</h2>`
+
+			for (j = 0; j <= iterationIngreseM[j]; j++) {
+				if (j === iterationOmitirM[j]) {
+					continue
+				}
+				showApp.innerHTML += `<p>${i} x ${j} = ${i * j}</p>`
+			}
 		}
 	}
 
+	showTable()
+
 }
+
+// console.log('iteration', iteration)
