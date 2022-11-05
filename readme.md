@@ -78,3 +78,35 @@ const getUser= ()=>({
 console.log(getUser())
 De esta forma se le dice a javaScript que esto no es el cuerpo de una función lo que deseo regresar es un objeto
 
+
+Filter:
+Es el hermano de map porque filter tambien retorna un array de elementos
+sin embargo filter sirve para poder crear filtro en base a un condicion
+queremos solo los productos que tenga como precio > 100
+Si el elemento es > 100 entonces guardalo en la variable filtro
+
+Para buscar una marca que conteng la palabra 'my' (dentro de D:\codigo\git\codigo-16\filter\app.js) dentro de un arreglo, se hace de la siguiente forma:
+let filtro2 = clothes.filter(clothe => clothe.price > 100 && clothe.brand.includes('my'))
+console.log(filtro2)
+
+Cuando se desea colocar el texto de búsqueda en letras pequeñas o grandes es mejor usar el toLocale (Upper or Lower). Ejemplo: toLocaleLowerCase()
+
+Si hay condicionales se debe colocar primero la transformación del texto. Ejemplo:
+
+Si se coloca la siguiente línea va a dar un error:
+let filtro4 = clothes.filter(clothe => clothe.price > 100 && clothe.brand.toLocaleLowerCase().includes('MY'))
+console.log('4', filtro2)
+
+Primero debería colocarse así:
+let filtro3 = clothes.filter(clothe => clothe.brand.toLocaleLowerCase().includes('my'))
+console.log('3', filtro2)
+
+Si no se usa la transformación del texto no sucede ningún error. Ejemplo:
+let filtro2 = clothes.filter(clothe => clothe.price > 100 && clothe.brand.includes('my'))
+console.log('2', filtro2)
+
+
+Find:
+Retorna un solo elemento. No retorna array como el filter
+El find si se puede almacenar en una variable
+Sólo devuelve un resultado, por eso no retorna array
