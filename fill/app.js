@@ -1,13 +1,5 @@
 let array = [10, 20, 30, 40, 50, 60, 70]
 
-let arrF = array.filter((x) => x > 30)
-
-let arrFind = array.find((x) => x > 30)
-
-console.log('arrF', arrF)
-
-console.log('arrFind', arrFind)
-
 const clothes = [
 	{
 		brand: "Mango",
@@ -44,10 +36,21 @@ const clothes = [
 	},
 ];
 
-let findC = clothes.find((clothe) => clothe.features.color == 'blue')
+let fillC = clothes.fill((clothe) => {
+	clothe.brand = "FerminContreras",
+		clothe.type = "Hat",
+		clothe.price = 120,
+		clothe.store = "All store Online",
+		clothe.rating = 5 / 5,
+		clothe.features = {
+			color: "Severals",
+			size: "S-M-L-XL",
+		}
+})
+document.getElementById('container').innerHTML += `<p>${clothes}</p>`
+console.log('fillC', fillC)
+console.log('clothes', clothes)
 
-let findCIndex = clothes.findIndex((clothe) => clothe.features.color === 'blue')
+let fillA = array.fill(1)
 
-console.log('findC', findC)
-
-console.log('findCIndex', findCIndex)
+document.getElementById('container').innerHTML += `<p>${array}</p>`

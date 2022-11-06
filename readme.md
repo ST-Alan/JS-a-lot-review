@@ -110,3 +110,46 @@ Find:
 Retorna un solo elemento. No retorna array como el filter
 El find si se puede almacenar en una variable
 Sólo devuelve un resultado, por eso no retorna array
+
+Fromulario Tabla de Multiplicar:
+Aquí Se encuentra un ejercicio con un formulario que inserta todas las tablas de multiplicar que se le añadan: codigo-16\ejerciciosvi\readme.md
+
+
+MÉTODOS PARA RECORRER ARREGLOS CON JS
+
+for
+Se crea una variable en singular que toma el valor del arreglo y retorna la condición expresada
+forof
+Parecido al for, itera el arreglo siempre y cuando cumpla una condición, luego devuelve la condición expresada
+forin
+Igual que el forof, solo que devuelve el índice según la condición
+forEach
+Ejecuta una función por cada elemento del array. No return-No variable
+map
+Como forEach con return y si se puede almacenar en varaible
+reduce
+No lo entiendo bien aún. Devuelve un array o un elemento único. Lo mismo hace el map/find
+filter
+Devuelve un nuevo array con los elementos que cumplan una función dada. Puede almacenarce en una variable
+find
+Solo devuleve un elemento; el primer elemento del array que cumpla con la función
+some:
+Valida si alguno de los elementos cumple alguna condición.
+Es boleano
+every:
+Valida si todos los elementos cumplen una condición
+Es boleano
+fill:fill\app.js
+Rellena el array con un mismo elemento
+const array1 = [1, 2, 3, 4];
+
+// fill with 0 from position 2 until position 4
+console.log(array1.fill(0, 2, 4));
+// expected output: [1, 2, 0, 0]
+
+// fill with 5 from position 1
+console.log(array1.fill(5, 1));
+// expected output: [1, 5, 5, 5]
+
+console.log(array1.fill(6));
+// expected output: [6, 6, 6, 6]

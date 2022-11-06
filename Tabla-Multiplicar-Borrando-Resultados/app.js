@@ -19,7 +19,7 @@ formulario.onsubmit = (e) => {
 	console.log('obtenerDatos', obtenerDatos)
 	obtenerDatos.push(obtenerDato)
 
-	let insT = Number(obtenerDatos.map((dato) => { return dato.insT }))
+	let insT = Number(obtenerDatos.map(dato => dato.insT))//fat arrow inline
 	let omiT = Number(obtenerDatos.map((dato) => { return dato.omiT }))
 	let insM = Number(obtenerDatos.map((dato) => { return dato.insM }))
 	let omiM = Number(obtenerDatos.map((dato) => { return dato.omiM }))
@@ -44,6 +44,10 @@ formulario.onsubmit = (e) => {
 		}
 		obtenerDatos = []
 	})
+
+	formulario.onreset = () => {
+		showApp.innerHTML = ''
+	}
 
 
 
